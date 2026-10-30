@@ -1,29 +1,53 @@
-# Welcome to your Lovable project
+#KERNEX | Multi-Tier Nemotron AI Platform
+KERNEX is an enterprise-grade AI model ecosystem powered by the NVIDIA Nemotron model family via the Nebius Token Factory API. It features an intelligent Complexity-Aware Model Router that dynamically analyzes incoming requests and dispatches them to the optimal tier—maximizing speed, execution accuracy, and compute efficiency.
 
-This project was built with [Lovable](https://lovable.dev).
+##🧠 Dynamic Model Routing Architecture
+KERNEX eliminates the trade-off between speed and intelligence using a tri-tier routing system:
 
-## Build with Lovable
+                  ┌─────────────────────────────────────────┐
+                  │          KERNEX Core Router             │
+                  │   (Powered by Nemotron-3.5 Nano/Nemo)   │
+                  └────────────────────┬────────────────────┘
+                                       │
+                         Analyzes Prompt Complexity
+                                       │
+         ┌─────────────────────────────┼─────────────────────────────┐
+         ▼                             ▼                             ▼
+┌───────────────────┐        ┌───────────────────┐        ┌───────────────────┐
+│   Low Complexity  │        │ Medium Complexity │        │ High Complexity   │
+├───────────────────┤        ├───────────────────┤        ├───────────────────┤
+│   Nemotron-3.5    │        │    Nemotron-3     │        │   Nemotron-3.5    │
+│      Nemo/Nano    │        │       Ultra       │        │       Super       │
+│                   │        │                   │        │                   │
+│ • Simple C Code   │        │ • Algorithm Opt.  │        │ • Multimodal/VL   │
+│ • Rapid Queries   │        │ • System Logic    │        │ • Heavy Reasoning │
+│ • Low Latency     │        │ • Refactoring     │        │ • Architecture    │
+└───────────────────┘        └───────────────────┘        └───────────────────┘
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+##✨ Core Platform Capabilities
+🚦 Intelligent Prompt Router: The lightweight Nemo tier acts as an instant classifier, evaluating prompt complexity in real time before routing execution to Ultra or Super.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+🏆 Nemotron Super Engine: Apex-tier model handling multi-step reasoning, architectural synthesis, and complex vision-language tasks (Super-VL).
 
-## Development
+⚡ Sub-Second Code Generation: Generates pure, compilable C/C++ and multi-language code with standard ASCII operators and zero conversational clutter.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+🔒 Zero-Trust Security Proxy: Backend proxy hides API credentials from client network inspections and browser storage.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+📊 Real-Time Telemetry: Live streaming of token counts, generation latency, and output throughput (tok/s).
 
-## Built with
+##🛠️ Built With
+AI Engine: NVIDIA Nemotron Family (Nemotron-3.5-Nano, Nemotron-3-Ultra, Nemotron-3.5-Super-VL)
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+API Provider: Nebius Token Factory
+
+Frontend: React, TypeScript, TanStack, Tailwind CSS
+
+Backend Proxy: Python (Flask, Flask-CORS)
+
+##🚀 Quickstart & Development
+Prerequisites
+Node.js (v18+) and npm
+
+Python 3.9+
+
+Nebius Token Factory API Key
