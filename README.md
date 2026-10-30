@@ -14,14 +14,23 @@ KERNEX eliminates the trade-off between speed and intelligence using a tri-tier 
          ┌─────────────────────────────┼─────────────────────────────┐
          ▼                             ▼                             ▼
 ┌───────────────────┐        ┌───────────────────┐        ┌───────────────────┐
-│   Low Complexity  │        │ Medium Complexity │        │ High Complexity   │
+
+│   Low Complexity    │      │ Medium Complexity │        │ High Complexity   │
+
 ├───────────────────┤        ├───────────────────┤        ├───────────────────┤
+
 │   Nemotron-3.5    │        │    Nemotron-3     │        │   Nemotron-3.5    │
+
 │      Nemo/Nano    │        │       Ultra       │        │       Super       │
+
 │                   │        │                   │        │                   │
+
 │ • Simple C Code   │        │ • Algorithm Opt.  │        │ • Multimodal/VL   │
+
 │ • Rapid Queries   │        │ • System Logic    │        │ • Heavy Reasoning │
+
 │ • Low Latency     │        │ • Refactoring     │        │ • Architecture    │
+
 └───────────────────┘        └───────────────────┘        └───────────────────┘
 
 ##✨ Core Platform Capabilities
